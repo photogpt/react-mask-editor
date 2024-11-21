@@ -4,11 +4,11 @@ import React from "react";
 import { MaskEditor, MaskEditorProps } from "./maskEditor";
 import { toMask } from "./utils";
 const icon = require("./icon.png");
+const cat = require("./cat.jpg");
 
 export default {
   component: MaskEditor,
   title: "Mask Editor",
-  id: "mask-editor"
 } as ComponentMeta<typeof MaskEditor>;
 
 const Template: ComponentStory<typeof MaskEditor> = (
@@ -29,4 +29,13 @@ const Template: ComponentStory<typeof MaskEditor> = (
 export const BareEditorStory = Template.bind({});
 BareEditorStory.args = {
   src: icon,
+  maskColor: "#ffffff",
 }
+BareEditorStory.storyName = "Default"
+
+export const CatEditorStory = Template.bind({});
+CatEditorStory.args = {
+  src: cat,
+  maskColor: "#ffffff",
+}
+CatEditorStory.storyName = "Non square image"
