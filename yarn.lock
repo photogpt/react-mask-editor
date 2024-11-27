@@ -4355,6 +4355,11 @@ core-js-compat@^3.21.0, core-js-compat@^3.22.1, core-js-compat@^3.8.1:
     browserslist "^4.21.3"
     semver "7.0.0"
 
+core-js-pure@^3.39.0:
+  version "3.39.0"
+  resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.39.0.tgz#aa0d54d70a15bdc13e7c853db87c10abc30d68f3"
+  integrity sha512-7fEcWwKI4rJinnK+wLTezeg2smbFFdSBP6E2kQZNbnzM2s1rpKQ6aaRteZSSg7FLU3P0HGGVo/gbpfanU36urg==
+
 core-js-pure@^3.8.1:
   version "3.25.0"
   resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.25.0.tgz#f8d1f176ff29abbfeb610110de891d5ae5a361d4"
