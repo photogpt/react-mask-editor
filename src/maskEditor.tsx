@@ -106,7 +106,9 @@ export const MaskEditor: React.FC<MaskEditorProps> = (
 
           const img = new Image();
           img.onload = () => {
-            setSize({ x: img.width, y: img.height });
+            if (size?.x !== img.width && size?.y !== img.height) {
+              setSize({ x: img.width, y: img.height });
+            }
 
             const canvasEl = canvas.current;
             if (canvasEl) {
@@ -124,7 +126,7 @@ export const MaskEditor: React.FC<MaskEditorProps> = (
     };
 
     loadImage();
-  }, [src, canvas.current, context, size]);
+  }, [src, canvas.current?.width, canvas.current?.height, context, size]);
 
   // Pass mask canvas up
   React.useLayoutEffect(() => {
